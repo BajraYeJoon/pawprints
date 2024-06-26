@@ -11,4 +11,13 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --primary: 25, 76%, 31%;
+    --foreground: 143, 38%, 69%;
+    --background: 0, 0%, 0%;
+  }
 }
