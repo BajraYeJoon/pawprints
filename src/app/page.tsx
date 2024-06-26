@@ -1,4 +1,5 @@
-import Image from "next/image";
+import Hero from "@/screens/Hero/Hero";
+import Navbar from "@/screens/Navbar/Navbar";
 
 export default function Home() {
   const jsonLd = {
@@ -11,12 +12,16 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex flex-col mx-auto justify-between ">
+      <div className="relative px-6 md:px-16 lg:px-24 bg-foreground h-fit lg:h-screen">
+        <Navbar />
+        <Hero />
+      </div>
       Page
-      <script
+      {/* <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      /> */}
     </main>
   );
 }
