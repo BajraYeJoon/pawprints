@@ -32,10 +32,7 @@ const Hero = () => {
           responsible pet ownership. We uplift both animals and communities.
         </Typography>
 
-        <Button className="w-full md:w-40 lg:w-fit ">
-          About Us
-          <MoveRightIcon size={20} className="ml-2" />
-        </Button>
+        <Button className="w-full md:w-44 lg:w-fit ">About Us</Button>
       </div>
       <Image
         src={HeroImage}
