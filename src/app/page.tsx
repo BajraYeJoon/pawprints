@@ -1,3 +1,4 @@
+import About from "@/screens/About/About";
 import Hero from "@/screens/Hero/Hero";
 import Navbar from "@/screens/Navbar/Navbar";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Navbar />
         <Hero />
       </div>
+      <About />
       Page
       {/* <script
         type="application/ld+json"

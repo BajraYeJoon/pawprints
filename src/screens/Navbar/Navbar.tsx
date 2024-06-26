@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { AlignJustify, HamIcon } from "lucide-react";
-import { Button } from "@/components/Button";
+import { Button } from "@/components";
 import { Oleo_Script } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { navItems } from "@/constants";
