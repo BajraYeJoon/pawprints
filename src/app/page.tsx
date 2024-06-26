@@ -1,6 +1,7 @@
-import About from "@/screens/About/About";
-import Hero from "@/screens/Hero/Hero";
 import Navbar from "@/screens/Navbar/Navbar";
+import Hero from "@/screens/Hero/Hero";
+import About from "@/screens/About/About";
+import DonationSummary from "@/screens/DonationSummary/DonationSummary";
 
 export default function Home() {
   const jsonLd = {
@@ -19,11 +20,12 @@ export default function Home() {
         <Hero />
       </div>
       <About />
+      <DonationSummary />
       Page
-      {/* <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      /> */}
+      />
     </main>
   );
 }

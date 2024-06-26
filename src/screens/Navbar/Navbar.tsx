@@ -48,10 +48,12 @@ const Navbar = () => {
         </ul>
         <hr className="mt-4 w-full lg:hidden" />
         <div className="my-4 flex flex-col w-full justify-center lg:justify-end gap-5 md:flex-row items-center lg:my-0 lg:ml-auto lg:space-x-3  ">
-          <Button variant="secondary" className="w-full lg:w-fit ">
+          <Button variant="secondary" className="w-full lg:w-fit " showIcon>
             Volunteer
           </Button>
-          <Button className="w-full lg:w-fit">Donate</Button>
+          <Button showIcon className="w-full lg:w-fit">
+            Donate
+          </Button>
         </div>
       </nav>
     </header>

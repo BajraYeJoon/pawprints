@@ -7,7 +7,7 @@ import AboutImg from "@/assets/about.png";
 
 const About = () => {
   return (
-    <section className="px-10 md:px-24 lg:px-48 my-20 md:my-28 lg:my-32 flex flex-col justify-center items-center gap-12 md:gap-16 lg:gap-24">
+    <section className="px-10 md:px-24 lg:px-52 my-20 md:my-28 lg:my-32 flex flex-col justify-center items-center gap-12 md:gap-16 lg:gap-24">
       <Heading
         title="Who we are and our mission"
         heading="About our shelter and values"
@@ -32,10 +32,7 @@ const About = () => {
             to make a significant impact.
           </Typography>
 
-          <Button className="w-full py-2 md:py-4 md:w-fit ">
-            About Us
-            <MoveRightIcon size={20} className="ml-2" />
-          </Button>
+          <Button className="w-full py-2 md:py-4 md:w-fit ">About Us</Button>
         </div>
 
         <Image
