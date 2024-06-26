@@ -37,14 +37,7 @@ const DonationSummary = () => {
                 Raised: ${summary.raised}
               </Typography>
               <div className="col-span-2">
-                <RangeSlider
-                  min="0"
-                  max={summary.goal.toString()}
-                  value={summary.raised.toString()}
-                  onChange={(e) => {
-                    // Handle change
-                  }}
-                />
+                <RangeSlider min="0" max="50" value="30" />
               </div>
             </div>
             <figure className="flex flex-col justify-between min-h-28 gap-3 p-5 items-start ">
@@ -68,7 +61,6 @@ const DonationSummary = () => {
           </div>
         ))}
       </div>
-      <Button> View all Cause </Button>
     </section>
   );
 };

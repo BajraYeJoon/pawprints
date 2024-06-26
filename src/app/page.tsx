@@ -2,6 +2,7 @@ import Navbar from "@/screens/Navbar/Navbar";
 import Hero from "@/screens/Hero/Hero";
 import About from "@/screens/About/About";
 import DonationSummary from "@/screens/DonationSummary/DonationSummary";
+import DonateCard from "@/screens/DonateCard/DonateCard";
 
 export default function Home() {
   const jsonLd = {
@@ -21,7 +22,7 @@ export default function Home() {
       </div>
       <About />
       <DonationSummary />
-      Page
+      <DonateCard />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
