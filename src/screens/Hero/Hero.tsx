@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import HeroImage from "@/assets/hero-image.png";
-import { Typography } from "@/components/Typography";
-import { Button } from "@/components/Button";
+import { Typography, Button } from "@/components";
+
 import {
   CircleChevronDown,
   CircleChevronUp,
@@ -26,7 +26,7 @@ const Hero = () => {
         </Typography>
         <Typography
           tag="p"
-          className=" mb-6 font-medium lg:mb-8 md:text-base lg:text-xl text-gray-800"
+          className=" mb-6 font-medium lg:mb-8 md:text-base lg:max-w-4xl lg:text-xl text-gray-800"
         >
           We advocate for vulnerable animals, providing safety while promoting
           responsible pet ownership. We uplift both animals and communities.
