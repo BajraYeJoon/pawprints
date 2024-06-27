@@ -29,7 +29,7 @@ const UserActionCTA = () => {
         contributed to our mission to improve the lives of all animals.
       </Typography>
 
-      <div className="flex w-full flex-col items-center justify-center gap-3 md:space-x-4 lg:flex-row">
+      <div className="flex w-full flex-col items-center justify-center gap-3 lg:flex-row">
         <Button variant="secondary">Adopt & Donate to help us</Button>
         <Button variant="secondary">Volunteering opportunities</Button>
       </div>

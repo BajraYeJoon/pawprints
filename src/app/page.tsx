@@ -7,6 +7,7 @@ import Event from "@/screens/Event/Event";
 import UserActionCTA from "@/screens/Cta/Cta";
 import NewsLetterCTASection from "@/screens/Cta/NewsLetter";
 
+import Footer from "@/screens/Footer/Footer";
 export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -29,6 +30,7 @@ export default function Home() {
       <Event />
       <UserActionCTA />
       <NewsLetterCTASection />
+      <Footer />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

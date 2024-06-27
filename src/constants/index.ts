@@ -33,3 +33,52 @@ export const donationSummaries = [
     img: dogDonateImg3,
   },
 ];
+
+export const footerLinks = [
+  {
+    title: "Quick Links",
+    links: [
+      { name: "About Us", url: "#" },
+      { name: "Get Involved", url: "#" },
+      { name: "Contact Us", url: "#" },
+      { name: "Media", url: "#" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { name: "Animal Safety", url: "#" },
+      { name: "Programs", url: "#" },
+      { name: "Events", url: "#" },
+      { name: "Alumni", url: "#" },
+    ],
+  },
+  {
+    title: "Ways to Give",
+    links: [
+      { name: "Find a Family", url: "#" },
+      { name: "Donation", url: "#" },
+      { name: "Volunteer", url: "#" },
+      { name: "Give a Gift", url: "#" },
+    ],
+  },
+];
+
+export const subFooterLinks = [
+  {
+    name: "Terms of Service",
+    url: "#",
+  },
+  {
+    name: "Privacy Policy",
+    url: "#",
+  },
+  {
+    name: "Security",
+    url: "#",
+  },
+  {
+    name: "Sitemap",
+    url: "#",
+  },
+];

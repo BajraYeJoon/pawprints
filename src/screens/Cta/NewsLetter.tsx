@@ -8,7 +8,7 @@ const NewsLetterCTASection = () => {
         <div className="flex flex-col items-center gap-1 md:gap-2 lg:items-start lg:gap-2">
           <Typography
             tag="h3"
-            className="text-sm font-semibold md:text-base md:text-xl lg:text-2xl"
+            className="text-sm font-semibold md:text-base lg:text-2xl"
           >
             Join our Newsletter{" "}
           </Typography>
