@@ -25,17 +25,17 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
-  showIcon?: boolean;
+  hideIcon?: boolean;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, children, size, showIcon, ...props }, ref) => {
+  ({ className, variant, children, size, hideIcon, ...props }, ref) => {
     const Comp = "button";
     return (
       <Comp
@@ -44,10 +44,10 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       >
         {children}
-        {!showIcon && <MoveRightIcon size={30} className="ml-2" />}
+        {!hideIcon && <MoveRightIcon size={30} className="ml-2" />}
       </Comp>
     );
-  }
+  },
 );
 Button.displayName = "Button";
 

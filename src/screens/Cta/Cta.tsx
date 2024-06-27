@@ -5,7 +5,7 @@ import ctaCat from "@/assets/cta/cta-cat.png";
 
 const UserActionCTA = () => {
   return (
-    <section className="relative mx-auto flex w-4/5 flex-col items-center justify-center gap-4 overflow-hidden rounded-md bg-primary p-6 text-white md:gap-10 md:py-20 lg:my-32 lg:w-3/4">
+    <section className="relative mx-auto flex w-4/5 flex-col items-center justify-center gap-4 overflow-hidden rounded-md bg-primary p-6 text-white md:gap-10 md:py-20 lg:my-24 lg:w-3/4">
       <div className="absolute left-0 top-0 hidden -translate-x-1/2 -translate-y-1/2 transform rounded-full border-[30px] border-foreground md:block md:h-[200px] md:w-[200px] lg:h-[500px] lg:w-[500px] lg:border-[60px]"></div>
       <div className="absolute bottom-0 right-0 hidden translate-x-1/2 translate-y-1/2 transform rounded-full border-[30px] border-foreground md:block md:h-[200px] md:w-[200px] lg:h-[500px] lg:w-[500px] lg:border-[60px]"></div>
 
