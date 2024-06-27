@@ -12,13 +12,11 @@ const DonationSummary = () => {
 
   return (
     <section className="bg-[#FDF7F4] px-10 md:px-24 lg:px-52 py-20 md:py-28 lg:py-32  flex flex-col justify-center items-center gap-12 md:gap-16 lg:gap-24">
-      <div className="">
-        <Heading
-          title="A Help to those who need it"
-          heading="Each donation is an essential"
-          subtitle="We advocate for vulnerable animals, providing safety while promoting responsible pet ownership. We uplift both animals and communities."
-        />
-      </div>
+      <Heading
+        title="A Help to those who need it"
+        heading="Each donation is an essential"
+        subtitle="We advocate for vulnerable animals, providing safety while promoting responsible pet ownership. We uplift both animals and communities."
+      />
 
       <div className="grid grid-cols-1 md:grid-cols-2 place-content-center lg:grid-cols-3 gap-8 h-fit">
         {donationSummaries.map((summary, index) => (
@@ -27,7 +25,7 @@ const DonationSummary = () => {
             className="max-w-sm bg-white border border-gray-200 rounded-lg"
           >
             <Image
-              className="md:h-72 h-36 object-cover rounded-t-lg"
+              className="lg:h-72 h-36 object-cover rounded-t-lg"
               src={summary.img}
               alt=""
             />
