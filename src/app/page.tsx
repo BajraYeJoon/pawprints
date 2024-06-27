@@ -4,6 +4,7 @@ import About from "@/screens/About/About";
 import DonationSummary from "@/screens/DonationSummary/DonationSummary";
 import DonateCard from "@/screens/DonateCard/DonateCard";
 import Event from "@/screens/Event/Event";
+import UserActionCTA from "@/screens/Cta/Cta";
 
 export default function Home() {
   const jsonLd = {
@@ -25,6 +26,7 @@ export default function Home() {
       <DonationSummary />
       <DonateCard />
       <Event />
+      <UserActionCTA />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
