@@ -18,15 +18,15 @@ const Heading = ({
   return (
     <section
       className={cn(
-        "flex flex-col justify-center gap-4 md:gap-6 lg:gap-8",
-        placeContentLeft ? "items-start" : "items-center"
+        "flex flex-col justify-center gap-4 md:gap-3 lg:gap-8",
+        placeContentLeft ? "items-start" : "items-center",
       )}
     >
       <Typography
         tag="span"
         className={cn(
-          "text-primary text-xs md:text-base uppercase font-medium tracking-wide",
-          placeContentLeft ? "text-left" : "text-center"
+          "text-xs font-medium uppercase tracking-wide text-primary md:text-base",
+          placeContentLeft ? "text-left" : "text-center",
         )}
       >
         {title}
@@ -34,8 +34,8 @@ const Heading = ({
       <Typography
         tag="h1"
         className={cn(
-          "text-2xl md:text-3xl lg:text-4xl font-semibold",
-          placeContentLeft ? "text-left" : "text-center"
+          "text-2xl font-semibold md:text-2xl lg:text-4xl",
+          placeContentLeft ? "text-left" : "text-center",
         )}
       >
         {heading}
@@ -43,8 +43,8 @@ const Heading = ({
       <Typography
         tag="h2"
         className={cn(
-          "text-gray-400 max-w-md md:max-w-3xl lg:max-w-5xl text-sm md:text-lg lg:text-xl font-normal tracking-normal",
-          placeContentLeft ? "text-left" : "text-center"
+          "max-w-md text-sm font-normal tracking-normal text-gray-400 md:max-w-3xl md:text-base lg:max-w-5xl lg:text-xl",
+          placeContentLeft ? "text-left" : "text-center",
         )}
       >
         {subtitle}
