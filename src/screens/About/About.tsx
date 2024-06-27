@@ -7,24 +7,24 @@ import AboutImg from "@/assets/about.png";
 
 const About = () => {
   return (
-    <section className="px-10 md:px-24 lg:px-52 my-20 md:my-28 lg:my-32 flex flex-col justify-center items-center gap-12 md:gap-16 lg:gap-24">
+    <section className="mx-auto my-20 flex flex-col items-center justify-center gap-12 px-10 md:my-28 md:gap-16 md:px-24 lg:my-32 lg:max-w-screen-2xl lg:gap-24">
       <Heading
         title="Who we are and our mission"
         heading="About our shelter and values"
         subtitle="We advocate for vulnerable animals, providing safety while promoting responsible pet ownership. We uplift both animals and communities."
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-2 gap-6 md:gap-7 lg:gap-12 place-content-between">
-        <div className="flex text-center md:text-left flex-col justify-center items-start gap-5 md:gap-4 lg:gap-10 md:col-span-3 lg:col-auto">
+      <div className="grid grid-cols-1 place-content-between gap-6 md:grid-cols-5 md:gap-7 lg:grid-cols-2 lg:gap-12">
+        <div className="flex flex-col items-start justify-center gap-5 text-center md:col-span-3 md:gap-4 md:text-left lg:col-auto lg:gap-10">
           <Typography
             tag="h1"
-            className="text-2xl font-normal tracking-tight md:tracking-normal md:leading-10 md:text-[25px] md:text-balance md:font-normal lg:text-5xl "
+            className="text-2xl font-normal tracking-tight md:text-balance md:text-[25px] md:font-normal md:leading-10 md:tracking-normal lg:text-5xl"
           >
             Your donations help us run important projects
           </Typography>
           <Typography
             tag="p"
-            className="font-medium text-sm md:text-base lg:max-w-2xl lg:text-xl text-gray-400"
+            className="text-sm font-medium text-gray-400 md:text-base lg:max-w-2xl lg:text-xl"
           >
             As a pioneer of the no-kill movement, Paw Print leads the way with
             national and international programs designed to increase adoptions
@@ -32,13 +32,13 @@ const About = () => {
             to make a significant impact.
           </Typography>
 
-          <Button className="w-full py-2 md:py-4 md:w-fit ">About Us</Button>
+          <Button className="w-full py-2 md:w-fit md:py-4">About Us</Button>
         </div>
 
         <Image
           src={AboutImg}
           alt="dogs playing with each"
-          className="object-cover h-fit md:ml-3 lg:ml-0 lg:col-auto md:min-w-96 md:min-h-[450px]  md:col-span-2 rounded-2xl"
+          className="h-fit rounded-2xl object-cover md:col-span-2 md:ml-3 md:min-h-[450px] md:min-w-96 lg:col-auto lg:ml-0"
         />
       </div>
     </section>

@@ -9,21 +9,21 @@ const donationAmounts = [10, 25, 50, 100, 250];
 
 const DonateCard = () => {
   return (
-    <section className="px-10 md:px-24 lg:px-52  mx-auto  sm:px-6 my-20 md:my-28 lg:my-32">
-      <div className="grid grid-cols-2  gap-6">
-        <div className="relative">
+    <section className="mx-auto my-20 px-10 sm:px-6 md:my-28 md:px-24 lg:my-32 lg:px-52">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-4 md:gap-4 lg:gap-0">
+        <div className="relative col-span-2 flex justify-center">
           <Image
-            className="max-w-sm flex-1 place-content-center object-contain"
+            className="flex rounded-md object-cover px-10 md:p-0"
             src={donateCardImg}
             alt="Donate Dog"
           />
 
-          <div className="absolute bottom-12 right-40 px-6 py-4 rotate-90 bg-background rounded-md text-white">
+          <div className="bottom-20 right-24 hidden rotate-90 rounded-md bg-background px-6 py-4 text-white lg:absolute lg:block">
             Paw Prints
           </div>
         </div>
 
-        <div className="md:flex-1 justify-center">
+        <div className="col-span-2 justify-center md:flex-1">
           <Heading
             title="A Help to those who need it"
             heading="Transform lives with donations"
@@ -31,7 +31,7 @@ const DonateCard = () => {
             placeContentLeft
           />
 
-          <div className="flex flex-col gap-6 mt-3">
+          <div className="mt-3 flex flex-col gap-6">
             <RangeSlider min="0" max="200" value="50" />
             <div className="flex justify-between">
               <Typography tag="p">Goal: $500</Typography>
@@ -40,26 +40,29 @@ const DonateCard = () => {
               </Typography>
             </div>
 
-            <div className="flex items-center border-2 w-fit">
+            <div className="flex w-fit items-center border-2">
               <div className="border-r-2 px-4 py-2">$</div>
 
               <input
                 type="number"
-                className="pl-2 max-w-16"
+                className="max-w-16 pl-2"
                 placeholder="10.00"
                 required
               />
             </div>
 
-            <div className="flex gap-3 items-start justify-start font-normal text-base">
+            <div className="flex flex-wrap justify-start gap-3 text-sm font-normal md:items-start lg:text-base">
               {donationAmounts.map((amount) => (
-                <div key={amount} className="px-4 py-2 rounded-md border-2 ">
+                <div
+                  key={amount}
+                  className="rounded-md border-2 px-3 py-1 lg:px-4 lg:py-2"
+                >
                   ${amount.toFixed(2)}
                 </div>
               ))}
             </div>
 
-            <Button className="w-fit">Donate Now</Button>
+            <Button>Donate Now</Button>
           </div>
         </div>
       </div>

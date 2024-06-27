@@ -8,6 +8,7 @@ import UserActionCTA from "@/screens/Cta/Cta";
 import NewsLetterCTASection from "@/screens/Cta/NewsLetter";
 
 import Footer from "@/screens/Footer/Footer";
+import CustomersTestimonial from "@/screens/Testimonials/Testimonial";
 export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -28,6 +29,7 @@ export default function Home() {
       <DonationSummary />
       <DonateCard />
       <Event />
+      <CustomersTestimonial />
       <UserActionCTA />
       <NewsLetterCTASection />
       <Footer />
