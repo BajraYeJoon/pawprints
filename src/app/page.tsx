@@ -5,6 +5,7 @@ import DonationSummary from "@/screens/DonationSummary/DonationSummary";
 import DonateCard from "@/screens/DonateCard/DonateCard";
 import Event from "@/screens/Event/Event";
 import UserActionCTA from "@/screens/Cta/Cta";
+import NewsLetterCTASection from "@/screens/Cta/NewsLetter";
 
 export default function Home() {
   const jsonLd = {
@@ -17,8 +18,8 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col mx-auto justify-between ">
-      <div className="relative px-6 md:px-16 lg:px-24 bg-foreground h-fit lg:h-screen">
+    <main className="mx-auto flex flex-col justify-between">
+      <div className="relative h-fit bg-foreground px-6 md:px-16 lg:h-screen lg:px-24">
         <Navbar />
         <Hero />
       </div>
@@ -27,6 +28,7 @@ export default function Home() {
       <DonateCard />
       <Event />
       <UserActionCTA />
+      <NewsLetterCTASection />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
