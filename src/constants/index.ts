@@ -3,9 +3,33 @@ import dogDonateImg2 from "@/assets/dogs/dog-donate-2.png";
 import dogDonateImg3 from "@/assets/dogs/dog-donate-3.png";
 
 export const navItems = [
-  { name: "Campaigns & Topics", link: "#" },
-  { name: "Animals", link: "#" },
-  { name: "About Us", link: "#" },
+  {
+    name: "Campaigns & Topics",
+    link: "#",
+    dropdown: [
+      { name: "Campaign 1", link: "#" },
+      { name: "Campaign 2", link: "#" },
+      { name: "Topic 1", link: "#" },
+    ],
+  },
+  {
+    name: "Animals",
+    link: "#",
+    dropdown: [
+      { name: "Cats", link: "#" },
+      { name: "Dogs", link: "#" },
+      { name: "Wildlife", link: "#" },
+    ],
+  },
+  {
+    name: "About Us",
+    link: "#",
+    dropdown: [
+      { name: "Our Mission", link: "#" },
+      { name: "Our Team", link: "#" },
+      { name: "Careers", link: "#" },
+    ],
+  },
   { name: "Contact", link: "#" },
 ];
 

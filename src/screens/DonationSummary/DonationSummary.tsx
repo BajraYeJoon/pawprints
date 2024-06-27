@@ -11,25 +11,25 @@ const DonationSummary = () => {
   const [rangeValue, setRangeValue] = useState(50);
 
   return (
-    <section className="bg-[#FDF7F4] px-10 md:px-24 lg:px-52 py-20 md:py-28 lg:py-32  flex flex-col justify-center items-center gap-12 md:gap-16 lg:gap-24">
+    <section className="bg-accent flex flex-col items-center justify-center gap-12 px-10 py-20 md:gap-16 md:px-24 md:py-28 lg:gap-24 lg:px-52 lg:py-32">
       <Heading
         title="A Help to those who need it"
         heading="Each donation is an essential"
         subtitle="We advocate for vulnerable animals, providing safety while promoting responsible pet ownership. We uplift both animals and communities."
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 place-content-center lg:grid-cols-3 gap-8 h-fit">
+      <div className="grid h-fit grid-cols-1 place-content-center gap-8 md:grid-cols-2 lg:grid-cols-3">
         {donationSummaries.map((summary, index) => (
           <div
             key={index}
-            className="max-w-sm bg-white border border-gray-200 rounded-lg"
+            className="max-w-sm rounded-lg border border-gray-200 bg-white"
           >
             <Image
-              className="lg:h-72 h-36 object-cover rounded-t-lg"
+              className="h-36 rounded-t-lg object-cover lg:h-72"
               src={summary.img}
               alt=""
             />
-            <div className="bg-[#FDF7F4] grid p-5 grid-cols-2 font-medium uppercase tracking-wide text-sm">
+            <div className="bg-accent grid grid-cols-2 p-5 text-sm font-medium uppercase tracking-wide">
               <Typography tag="span">Goal: ${summary.goal}</Typography>
               <Typography tag="span" className="text-right">
                 Raised: ${summary.raised}
@@ -38,20 +38,20 @@ const DonationSummary = () => {
                 <RangeSlider min="0" max="50" value="30" />
               </div>
             </div>
-            <figure className="flex flex-col justify-between min-h-28 gap-3 p-5 items-start ">
+            <figure className="flex min-h-28 flex-col items-start justify-between gap-3 p-5">
               <Typography
                 tag="h2"
-                className="text-lg md:text-2xl font-semibold tracking-normal"
+                className="text-lg font-semibold tracking-normal md:text-2xl"
               >
                 {summary.title}
               </Typography>
-              <figcaption className="text-sm md:text-base first-letter:font-normal text-gray-400">
+              <figcaption className="text-sm text-gray-400 first-letter:font-normal md:text-base">
                 {summary.subtitle}
               </figcaption>
               <Button
                 variant="link"
                 size="reset"
-                className="uppercase text-sm tracking-wider"
+                className="text-sm uppercase tracking-wider"
               >
                 View Details
               </Button>

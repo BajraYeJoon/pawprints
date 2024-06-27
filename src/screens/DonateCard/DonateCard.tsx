@@ -13,7 +13,7 @@ const DonateCard = () => {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-4 md:gap-4 lg:gap-0">
         <div className="relative col-span-2 flex justify-center">
           <Image
-            className="flex rounded-md object-cover px-10 md:p-0"
+            className="flex rounded-md object-cover"
             src={donateCardImg}
             alt="Donate Dog"
           />

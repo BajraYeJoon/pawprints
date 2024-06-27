@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { MoveRightIcon } from "lucide-react";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm md:text-lg tracking-wide font-medium leading-7 cursor-pointer disabled:opacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm md:text-lg tracking-wide font-workSans font-medium leading-7 cursor-pointer disabled:opacity-50",
   {
     variants: {
       variant: {

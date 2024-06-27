@@ -25,7 +25,7 @@ const Heading = ({
       <Typography
         tag="span"
         className={cn(
-          "text-xs font-medium uppercase tracking-wide text-primary md:text-base",
+          "font-workSans text-xs font-medium uppercase tracking-wide text-primary md:text-base",
           placeContentLeft ? "text-left" : "text-center",
         )}
       >
@@ -43,7 +43,7 @@ const Heading = ({
       <Typography
         tag="h2"
         className={cn(
-          "max-w-md text-sm font-normal tracking-normal text-gray-400 md:max-w-3xl md:text-base lg:max-w-5xl lg:text-xl",
+          "font-workSans max-w-md text-sm font-normal tracking-normal text-gray-400 md:max-w-3xl md:text-base lg:max-w-5xl lg:text-xl",
           placeContentLeft ? "text-left" : "text-center",
         )}
       >

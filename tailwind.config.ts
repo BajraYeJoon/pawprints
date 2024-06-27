@@ -19,6 +19,11 @@ const config: Config = {
         primary: "hsl(var(--primary))",
         foreground: "hsl(var(--foreground))",
         background: "hsl(var(--background))",
+        accent: "hsl(var(--accent))",
+      },
+      fontFamily: {
+        oleo: ["var(--font-oleo)"],
+        workSans: ["var(--font-work_sans)"],
       },
     },
   },

@@ -17,16 +17,17 @@ const NewsLetterCTASection = () => {
           </Typography>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
+        <form className="flex flex-col items-center justify-center gap-4 md:flex-row">
           <input
             type="email"
             name="email"
             className="h-10 w-full rounded-md px-5 py-1 text-sm shadow-sm placeholder:text-gray-400 focus:outline-none md:h-14 md:max-w-md md:text-base lg:text-lg"
             placeholder="Enter your email"
+            required
           />
 
           <Button hideIcon>Subscribe</Button>
-        </div>
+        </form>
       </div>
     </section>
   );

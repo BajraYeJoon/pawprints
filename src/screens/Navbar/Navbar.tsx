@@ -1,12 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { AlignJustify, HamIcon } from "lucide-react";
+import { AlignJustify, ChevronDown } from "lucide-react";
 import { Button } from "@/components";
-import { Oleo_Script } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { navItems } from "@/constants";
-
-const oleo = Oleo_Script({ weight: "400", subsets: ["latin"] });
 
 const Navbar = () => {
   return (
@@ -14,8 +11,7 @@ const Navbar = () => {
       <Link
         href="/"
         className={cn(
-          "flex items-center whitespace-nowrap border-gray-200 text-2xl text-primary lg:border-r-2 lg:pr-8",
-          oleo.className,
+          "flex items-center whitespace-nowrap border-gray-200 font-oleo text-2xl text-primary lg:border-r-2 lg:pr-8",
         )}
       >
         Paw Prints
@@ -38,10 +34,11 @@ const Navbar = () => {
           {navItems.map((item, index) => (
             <li key={index} className="lg:mr-12">
               <Link
-                className="text-gray-700 transition-all ease-in-out hover:font-semibold hover:text-background"
+                className="text-md flex items-center text-gray-700 transition-all ease-in-out hover:text-background"
                 href={item.link}
               >
                 {item.name}
+                {item.dropdown && <ChevronDown size={12} className="ml-2" />}
               </Link>
             </li>
           ))}

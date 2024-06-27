@@ -1,14 +1,11 @@
 import { Typography } from "@/components";
 import React from "react";
-import { Oleo_Script } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import { footerLinks, subFooterLinks } from "@/constants";
-
-const oleo = Oleo_Script({ weight: "400", subsets: ["latin"] });
 
 const Footer = () => {
   return (
@@ -19,8 +16,7 @@ const Footer = () => {
       <Typography
         tag="h1"
         className={cn(
-          "mb-4 text-2xl font-bold md:mb-6 md:text-xl lg:mb-16 lg:text-3xl",
-          oleo.className,
+          "font-oleo mb-4 text-2xl font-bold md:mb-6 md:text-xl lg:mb-16 lg:text-3xl",
         )}
       >
         PawPrints
