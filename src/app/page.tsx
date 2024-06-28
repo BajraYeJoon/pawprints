@@ -6,7 +6,6 @@ import DonateCard from "@/screens/DonateCard/DonateCard";
 import Event from "@/screens/Event/Event";
 import UserActionCTA from "@/screens/Cta/Cta";
 import NewsLetterCTASection from "@/screens/Cta/NewsLetter";
-
 import Footer from "@/screens/Footer/Footer";
 import CustomersTestimonial from "@/screens/Testimonials/Testimonial";
 export default function Home() {
@@ -33,6 +32,8 @@ export default function Home() {
       <UserActionCTA />
       <NewsLetterCTASection />
       <Footer />
+
+      {/* FOr seo */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

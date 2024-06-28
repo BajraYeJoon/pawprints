@@ -1,49 +1,24 @@
 import { Button, Heading, Typography } from "@/components";
 import React from "react";
-
-const eventScheduleDates = [
-  {
-    date: "08",
-    month: "June",
-    eventName: "Disaster Relief for Animals",
-    time: "07:00 AM - 10:00 PM",
-    location: "Kathmandu",
-  },
-  {
-    date: "08 ",
-    month: "June",
-
-    eventName: "Disaster Relief for Animals",
-    time: "07:00 AM - 10:00 PM",
-    location: "Kathmandu",
-  },
-  {
-    date: "08 ",
-    month: "June",
-
-    eventName: "Disaster Relief for Animals",
-    time: "07:00 AM - 10:00 PM",
-    location: "Kathmandu",
-  },
-];
+import { eventScheduleDates } from "@/constants";
 
 const Event = () => {
   return (
-    <section className="px-10 md:px-24 lg:px-52 my-20 md:my-28 lg:my-32 flex flex-col justify-center items-center gap-12 md:gap-16 lg:gap-24">
+    <section className="my-20 flex flex-col items-center justify-center gap-12 bg-accent px-10 md:my-28 md:gap-16 md:px-24 md:py-28 lg:my-32 lg:px-52 xl:px-56">
       <Heading
         title="Calender
         "
         heading="Event Schedule"
         subtitle="We advocate for vulnerable animals, providing safety while promoting responsible pet ownership. We uplift both animals and communities."
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 w-full">
+      <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
         {eventScheduleDates.map((event, index) => (
           <div
             key={index}
-            className="h-fit md:h-72 lg:min-w-[400px] grid grid-cols-1 gap-5 p-5 bg-[#FDF7F4] place-content-evenly rounded-sm"
+            className="grid h-fit grid-cols-1 place-content-evenly gap-5 rounded-sm bg-[#FBEFE9] p-5 md:h-72 lg:min-w-[400px]"
           >
-            <div className="flex flex-row items-center md:flex-col justify-between md:justify-start md:items-start ">
-              <Typography tag="span" className="text-4xl font-normal ">
+            <div className="flex flex-row items-center justify-between md:flex-col md:items-start md:justify-start">
+              <Typography tag="span" className="text-4xl font-normal">
                 {" "}
                 {event.date}
               </Typography>
@@ -54,11 +29,11 @@ const Event = () => {
             </div>
             <Typography
               tag="h1"
-              className="text-base md:text-2xl font-medium tracking-normal"
+              className="text-base font-medium tracking-normal md:text-2xl"
             >
               {event.eventName}
             </Typography>
-            <div className="flex flex-row justify-between md:flex-col tracking-wide gap-1 text-sm text-background md:justify-center items-start">
+            <div className="flex flex-row items-start justify-between gap-1 text-sm tracking-wide text-background md:flex-col md:justify-center">
               <Typography tag="span">{event.time}</Typography>
               <Typography tag="span">{event.location}</Typography>
             </div>

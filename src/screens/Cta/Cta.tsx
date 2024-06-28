@@ -23,7 +23,7 @@ const UserActionCTA = () => {
       </Typography>
       <Typography
         tag="p"
-        className="text-center text-sm font-normal text-gray-200 md:max-w-xl md:p-0 md:text-base lg:max-w-5xl lg:text-xl"
+        className="font-workSans text-center text-sm font-normal text-gray-200 md:max-w-xl md:p-0 md:text-base lg:max-w-5xl lg:text-xl"
       >
         Our work is made possible by the generosity of people like you, who have
         contributed to our mission to improve the lives of all animals.

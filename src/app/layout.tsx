@@ -1,9 +1,22 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Oleo_Script, Work_Sans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
 const inter = Montserrat({ subsets: ["latin"] });
+
+const oleo = Oleo_Script({
+  weight: "400",
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--font-oleo",
+});
+
+const work_sans = Work_Sans({
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--font-work-sans",
+});
 
 export const metadata: Metadata = {
   title: "Paw Prints - Your donation can save a life",
@@ -41,7 +54,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} ${oleo.variable} ${work_sans.variable}`}
+      >
         {children}
 
         <Analytics />

@@ -3,15 +3,39 @@ import dogDonateImg2 from "@/assets/dogs/dog-donate-2.png";
 import dogDonateImg3 from "@/assets/dogs/dog-donate-3.png";
 
 export const navItems = [
-  { name: "Campaigns & Topics", link: "#" },
-  { name: "Animals", link: "#" },
-  { name: "About Us", link: "#" },
+  {
+    name: "Campaigns & Topics",
+    link: "#",
+    dropdown: [
+      { name: "Campaign 1", link: "#" },
+      { name: "Campaign 2", link: "#" },
+      { name: "Topic 1", link: "#" },
+    ],
+  },
+  {
+    name: "Animals",
+    link: "#",
+    dropdown: [
+      { name: "Cats", link: "#" },
+      { name: "Dogs", link: "#" },
+      { name: "Wildlife", link: "#" },
+    ],
+  },
+  {
+    name: "About Us",
+    link: "#",
+    dropdown: [
+      { name: "Our Mission", link: "#" },
+      { name: "Our Team", link: "#" },
+      { name: "Careers", link: "#" },
+    ],
+  },
   { name: "Contact", link: "#" },
 ];
 
 export const donationSummaries = [
   {
-    goal: 100,
+    goal: 200,
     raised: 50,
     title: "New chance for animals",
     subtitle: "Give new chance for animals to live a better life",
@@ -80,5 +104,31 @@ export const subFooterLinks = [
   {
     name: "Sitemap",
     url: "#",
+  },
+];
+
+export const eventScheduleDates = [
+  {
+    date: "08",
+    month: "June",
+    eventName: "Disaster Relief for Animals",
+    time: "07:00 AM - 10:00 PM",
+    location: "Kathmandu",
+  },
+  {
+    date: "08 ",
+    month: "June",
+
+    eventName: "Rapid Response for Animals",
+    time: "07:00 AM - 10:00 PM",
+    location: "Kathmandu",
+  },
+  {
+    date: "08 ",
+    month: "June",
+
+    eventName: "Disaster Relief for Animals",
+    time: "07:00 AM - 10:00 PM",
+    location: "Kathmandu",
   },
 ];
