@@ -3,6 +3,7 @@
 
 We advocate for vulnerable animals, providing safety while promoting responsible pet ownership. We uplift both animals and communities.
 
+![Alt text](https://github.com/BajraYeJoon/assets/blob/main/Screenshot%20from%202024-06-28%2012-36-12.png)
 
 ## Tech Stack
 
