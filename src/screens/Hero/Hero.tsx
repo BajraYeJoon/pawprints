@@ -9,19 +9,19 @@ const Hero = () => {
       <div className="mr-auto max-w-4xl space-y-4 place-self-center lg:space-y-8">
         <Typography
           tag="span"
-          className="text-sm font-semibold uppercase leading-none tracking-wider lg:text-base lg:leading-7"
+          className="text-sm font-semibold uppercase leading-none tracking-wider lg:text-base"
         >
           Saving lives every day
         </Typography>
         <Typography
           tag="h1"
-          className="mb-4 h-fit max-w-3xl text-5xl font-extrabold tracking-tight md:text-3xl md:leading-7 md:tracking-normal lg:text-6xl"
+          className="mb-4 h-fit max-w-3xl text-5xl font-bold tracking-tight md:text-3xl md:leading-7 md:tracking-normal lg:text-5xl"
         >
           Saving lives of cats and dogs across world
         </Typography>
         <Typography
           tag="p"
-          className="mb-6 font-medium text-gray-800 md:text-base lg:mb-8 lg:max-w-4xl lg:text-xl"
+          className="mb-6 text-xs font-medium text-gray-800 lg:mb-8 lg:max-w-xl lg:text-base"
         >
           We advocate for vulnerable animals, providing safety while promoting
           responsible pet ownership. We uplift both animals and communities.

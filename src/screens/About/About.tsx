@@ -7,7 +7,7 @@ import AboutImg from "@/assets/about.png";
 
 const About = () => {
   return (
-    <section className="mx-auto my-20 flex flex-col items-center justify-center gap-12 px-10 md:my-28 md:gap-16 md:px-24 lg:my-32 lg:max-w-screen-2xl lg:gap-24">
+    <section className="mx-auto my-20 flex flex-col items-center justify-center gap-12 px-10 md:my-28 md:gap-16 md:px-24 lg:my-32 lg:max-w-screen-xl lg:gap-24">
       <Heading
         title="Who we are and our mission"
         heading="About our shelter and values"
@@ -18,13 +18,13 @@ const About = () => {
         <div className="flex flex-col items-start justify-center gap-5 text-center md:col-span-3 md:gap-4 md:text-left lg:col-auto lg:gap-10">
           <Typography
             tag="h1"
-            className="text-2xl font-normal tracking-tight md:text-balance md:text-[25px] md:font-normal md:leading-10 md:tracking-normal lg:text-5xl"
+            className="text-xl font-normal tracking-tight md:text-balance md:text-2xl md:font-normal md:leading-10 md:tracking-normal lg:text-4xl"
           >
             Your donations help us run important projects
           </Typography>
           <Typography
             tag="p"
-            className="text-sm font-medium text-gray-400 md:text-base lg:max-w-2xl lg:text-xl"
+            className="text-ellipsis text-xs font-medium text-gray-400 md:text-sm lg:max-w-2xl lg:text-balance lg:text-base lg:leading-7"
           >
             As a pioneer of the no-kill movement, Paw Print leads the way with
             national and international programs designed to increase adoptions
@@ -32,7 +32,7 @@ const About = () => {
             to make a significant impact.
           </Typography>
 
-          <Button className="w-full py-2 md:w-fit md:py-4">About Us</Button>
+          <Button className="w-full md:w-fit">Donate for pets</Button>
         </div>
 
         <Image
