@@ -5,7 +5,7 @@ import HeroImage from "@/assets/hero-image.png";
 import { Typography, Button, NavigationArrows } from "@/components";
 const Hero = () => {
   return (
-    <section className="mx-auto mt-28 flex flex-col items-center gap-12 px-4 py-8 md:mb-10 md:mt-32 md:flex-row md:gap-2 lg:mb-0 lg:mt-36 lg:gap-12 lg:px-24 xl:gap-0">
+    <section className="mx-auto mt-28 flex flex-col items-center gap-12 px-4 py-8 md:mb-10 md:mt-32 md:flex-row md:gap-2 lg:mb-0 lg:mt-36 lg:max-w-screen-xl lg:gap-12 lg:px-24 xl:gap-0">
       <div className="mr-auto max-w-4xl space-y-4 place-self-center lg:space-y-8">
         <Typography
           tag="span"

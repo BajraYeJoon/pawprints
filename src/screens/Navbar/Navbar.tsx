@@ -5,22 +5,32 @@ import { Button } from "@/components";
 import { cn } from "@/lib/utils";
 import { navItems } from "@/constants";
 
-const renderNavItems = () =>
-  navItems.map((item, index) => (
-    <li key={index} className="lg:mr-12">
-      <Link
-        className="flex items-center text-sm text-gray-700 transition-all ease-in-out hover:text-background"
-        href={item.link}
-      >
-        {item.name}
-        {item.dropdown && <ChevronDown size={12} className="ml-2" />}
-      </Link>
-    </li>
-  ));
+interface DropdownItem {
+  name: string;
+  link: string;
+}
 
+interface NavItem {
+  name: string;
+  link: string;
+  dropdown?: DropdownItem[];
+}
 const Navbar = () => {
+  const renderNavItems = () =>
+    navItems.map(({ name, link, dropdown = [] }: NavItem, index) => (
+      <li key={link} className="lg:mr-12">
+        <Link
+          className="flex items-center text-sm text-gray-700 transition-all ease-in-out hover:text-background"
+          href={link}
+        >
+          {name}
+          {dropdown && <ChevronDown size={12} className="ml-2" />}
+        </Link>
+      </li>
+    ));
+
   return (
-    <header className="fixed inset-x-0 top-10 z-[5000] mx-auto flex w-[90%] flex-col items-start justify-start rounded-2xl border border-gray-400 bg-white px-4 py-3 pl-8 md:w-[78%] lg:max-w-screen-xl lg:flex-row lg:items-center xl:max-w-screen-2xl">
+    <header className="fixed inset-x-0 top-10 z-[5000] mx-auto flex w-4/5 flex-col items-start justify-start rounded-2xl border border-gray-400 bg-white px-4 py-3 pl-8 lg:flex-row lg:items-center">
       <Link
         href="/"
         className={cn(

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: ["/"],
       disallow: "/private/",
     },
-    sitemap: "https://localhost:3000/sitemap.xml",
+    sitemap: "https://pawprints-one.vercel.app//sitemap.xml",
   };
 }

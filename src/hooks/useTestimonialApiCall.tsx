@@ -10,7 +10,7 @@ interface Testimonial {
 export const useTestimonials = () => {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState("");
+  const [error, setError] = useState<string>("");
 
   useEffect(() => {
     const fetchTestimonials = async () => {

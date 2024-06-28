@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Paw Prints",
     locale: "en_US",
     description: "Donate for cause and help animals in need.",
-    url: "http://localhost:3000/",
+    url: "https://pawprints-one.vercel.app/",
     images: "https://cdn-icons-png.flaticon.com/512/12/12638.png",
     emails: "binaya.bajrashakya@gmail.com",
   },

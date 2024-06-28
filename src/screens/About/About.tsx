@@ -1,7 +1,5 @@
-import { Heading } from "@/components";
 import React from "react";
-import { Typography, Button } from "@/components";
-import { MoveRightIcon } from "lucide-react";
+import { Typography, Button, Heading } from "@/components";
 import Image from "next/image";
 import AboutImg from "@/assets/about.png";
 
@@ -14,8 +12,8 @@ const About = () => {
         subtitle="We advocate for vulnerable animals, providing safety while promoting responsible pet ownership. We uplift both animals and communities."
       />
 
-      <div className="grid grid-cols-1 place-content-between gap-6 md:grid-cols-5 md:gap-7 lg:grid-cols-2 lg:gap-12">
-        <div className="flex flex-col items-start justify-center gap-5 text-center md:col-span-3 md:gap-4 md:text-left lg:col-auto lg:gap-10">
+      <section className="grid grid-cols-1 place-content-between gap-6 md:grid-cols-5 md:gap-7 lg:grid-cols-2 lg:gap-12">
+        <article className="flex flex-col items-start justify-center gap-5 text-center md:col-span-3 md:gap-4 md:text-left lg:col-auto lg:gap-10">
           <Typography
             tag="h1"
             className="text-xl font-normal tracking-tight md:text-balance md:text-2xl md:font-normal md:leading-10 md:tracking-normal lg:text-4xl"
@@ -33,14 +31,14 @@ const About = () => {
           </Typography>
 
           <Button className="w-full md:w-fit">Donate for pets</Button>
-        </div>
+        </article>
 
         <Image
           src={AboutImg}
-          alt="dogs playing with each"
+          alt="ogs happily playing in a park"
           className="h-fit rounded-2xl object-cover md:col-span-2 md:ml-3 md:min-h-[450px] md:min-w-96 lg:col-auto lg:ml-0"
         />
-      </div>
+      </section>
     </section>
   );
 };

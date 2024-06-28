@@ -6,7 +6,6 @@ import { FaQuoteLeft } from "react-icons/fa";
 import Image from "next/image";
 import { LoaderCircleIcon } from "lucide-react";
 import { useTestimonials } from "@/hooks/useTestimonialApiCall";
-import { cn } from "@/lib/utils";
 const CustomersTestimonial = () => {
   const { testimonials, isLoading, setIsLoading, error } = useTestimonials();
   const [currentIndex, setCurrentIndex] = useState(0);

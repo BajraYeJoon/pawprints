@@ -1,9 +1,7 @@
 import React from "react";
 import donateCardImg from "@/assets/donate-card-thumbnail.png";
 import Image from "next/image";
-import { Heading, Typography } from "@/components";
-import { RangeSlider } from "@/components/RangeSlider/RangeSlider";
-import { Button } from "@/components";
+import { Heading, Typography, Button, RangeSlider } from "@/components";
 
 const DonateCard = () => {
   const donationAmounts = [10, 25, 50, 100, 250];
@@ -45,7 +43,9 @@ const DonateCard = () => {
             </div>
 
             <div className="flex w-fit items-center border-2">
-              <div className="border-r-2 px-4 py-2">$</div>
+              <Typography tag="span" className="border-r-2 px-4 py-2">
+                $
+              </Typography>
 
               <input
                 type="number"

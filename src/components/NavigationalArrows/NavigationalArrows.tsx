@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 interface NavigationArrowsProps {
   direction: "prev" | "next";
-  onClick: () => void;
+  onClick: (e: React.MouseEvent<HTMLDivElement>) => void;
   disabled?: boolean;
   horizontal?: boolean;
 }

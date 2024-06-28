@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <main className="mx-auto flex flex-col justify-between">
-      <div className="relative h-fit bg-foreground px-6 md:px-16 lg:h-screen lg:px-24">
+      <div className="relative h-fit bg-foreground px-6 py-3">
         <Navbar />
         <Hero />
       </div>
