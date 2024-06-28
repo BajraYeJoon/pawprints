@@ -4,7 +4,7 @@ import { eventScheduleDates } from "@/constants";
 
 const Event = () => {
   return (
-    <section className="my-20 flex flex-col items-center justify-center gap-12 bg-accent px-10 md:my-28 md:gap-16 md:px-24 md:py-28 lg:my-32 lg:px-52">
+    <section className="my-20 flex flex-col items-center justify-center gap-12 bg-accent px-10 py-12 md:my-28 md:gap-16 md:px-24 md:py-28 lg:my-32 lg:px-52">
       <Heading
         title="Calender
         "

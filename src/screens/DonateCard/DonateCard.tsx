@@ -13,11 +13,11 @@ const DonateCard = () => {
   const goalCompletedPercent = (raisedDonateAmount / goalDonateAmount) * 100;
 
   return (
-    <section className="mx-auto my-20 px-10 sm:px-6 md:my-28 md:px-24 lg:my-24 lg:px-40">
+    <section className="mx-auto my-20 px-10 sm:px-6 md:mt-28 md:px-24 lg:px-40">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-4 md:gap-4 lg:gap-0">
         <div className="relative col-span-2 flex justify-center">
           <Image
-            className="flex rounded-md object-cover lg:h-[540px] lg:w-[350px]"
+            className="flex rounded-md object-cover lg:h-[540px] lg:w-[350px] xl:w-[400px]"
             src={donateCardImg}
             alt="Donate Dog"
           />

@@ -24,7 +24,7 @@ const CustomersTestimonial = () => {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <section className="mx-auto flex w-full flex-col items-center justify-center gap-12 px-10 md:gap-12 md:px-24 lg:max-w-screen-xl lg:gap-12">
+    <section className="mx-auto flex w-full flex-col items-center justify-center gap-12 px-10 md:gap-12 md:px-24 lg:max-w-screen-xl lg:gap-12 xl:max-w-screen-2xl">
       <Heading
         title="Testimonials"
         heading="Check what our volunteers are saying"

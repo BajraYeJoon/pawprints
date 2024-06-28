@@ -10,7 +10,7 @@ import { footerLinks, subFooterLinks } from "@/constants";
 const Footer = () => {
   return (
     <footer
-      className="mx-auto max-w-80 pb-8 sm:max-w-2xl lg:mt-24 lg:max-w-6xl lg:px-6"
+      className="mx-auto max-w-80 pb-8 sm:max-w-2xl md:mt-24 lg:max-w-6xl lg:px-6 xl:max-w-screen-xl xl:px-0"
       aria-labelledby="footer-heading"
     >
       <Typography
