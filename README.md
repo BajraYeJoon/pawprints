@@ -38,7 +38,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![](https://github.com/BajraYeJoon/assets/blob/main/Screenshot%20from%202024-06-28%2012-36-12.png)
+![](https://github.com/BajraYeJoon/assets/blob/main/Screenshot%20from%202024-06-28%2013-24-21.png)
+
 
 This is a static homepage created for "Paw Prints," a project dedicated to advocating for vulnerable animals, ensuring their safety, and promoting responsible pet ownership. Our mission is to uplift both animals and communities through our efforts. The homepage serves as a gateway to understanding our cause, showcasing our initiatives, and engaging with our community.
 
