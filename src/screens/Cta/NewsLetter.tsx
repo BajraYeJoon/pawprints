@@ -4,7 +4,7 @@ import { Button, Typography } from "@/components";
 const NewsLetterCTASection = () => {
   return (
     <section className="my-10 bg-foreground px-6 py-10 md:my-0 md:px-0">
-      <div className="mx-auto flex flex-col justify-between gap-5 px-4 lg:flex-row lg:px-40 xl:max-w-screen-xl xl:px-0">
+      <div className="mx-auto flex flex-col justify-between gap-5 px-4 lg:flex-row lg:px-40">
         <div className="flex flex-col items-center gap-1 md:gap-2 lg:items-start lg:gap-2">
           <Typography
             tag="h3"

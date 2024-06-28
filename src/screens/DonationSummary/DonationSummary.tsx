@@ -6,7 +6,7 @@ import { donationSummaries } from "@/constants";
 
 const DonationSummary = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-12 bg-accent px-10 py-20 md:gap-16 md:px-24 md:py-28 lg:gap-24 lg:px-52 lg:py-32">
+    <section className="flex flex-col items-center justify-center gap-12 bg-accent px-10 py-20 md:gap-16 md:px-24 md:py-28 lg:gap-24 lg:px-44 lg:py-32">
       <Heading
         title="A Help to those who need it"
         heading="Each donation is an essential"
