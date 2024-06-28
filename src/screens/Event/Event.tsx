@@ -1,42 +1,17 @@
 import { Button, Heading, Typography } from "@/components";
 import React from "react";
-
-const eventScheduleDates = [
-  {
-    date: "08",
-    month: "June",
-    eventName: "Disaster Relief for Animals",
-    time: "07:00 AM - 10:00 PM",
-    location: "Kathmandu",
-  },
-  {
-    date: "08 ",
-    month: "June",
-
-    eventName: "Disaster Relief for Animals",
-    time: "07:00 AM - 10:00 PM",
-    location: "Kathmandu",
-  },
-  {
-    date: "08 ",
-    month: "June",
-
-    eventName: "Disaster Relief for Animals",
-    time: "07:00 AM - 10:00 PM",
-    location: "Kathmandu",
-  },
-];
+import { eventScheduleDates } from "@/constants";
 
 const Event = () => {
   return (
-    <section className="bg-accent my-20 flex flex-col items-center justify-center gap-12 px-10 md:my-28 md:gap-16 md:px-24 md:py-44 lg:my-32 lg:gap-24 lg:px-52">
+    <section className="my-20 flex flex-col items-center justify-center gap-12 bg-accent px-10 md:my-28 md:gap-16 md:px-24 md:py-28 lg:my-32 lg:px-52 xl:px-56">
       <Heading
         title="Calender
         "
         heading="Event Schedule"
         subtitle="We advocate for vulnerable animals, providing safety while promoting responsible pet ownership. We uplift both animals and communities."
       />
-      <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+      <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
         {eventScheduleDates.map((event, index) => (
           <div
             key={index}

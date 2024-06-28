@@ -10,13 +10,13 @@ import { footerLinks, subFooterLinks } from "@/constants";
 const Footer = () => {
   return (
     <footer
-      className="mx-auto max-w-80 pb-8 sm:max-w-2xl lg:mt-24 lg:max-w-7xl xl:max-w-screen-2xl xl:px-8"
+      className="mx-auto max-w-80 pb-8 sm:max-w-2xl lg:mt-24 lg:max-w-7xl xl:max-w-screen-xl xl:px-8"
       aria-labelledby="footer-heading"
     >
       <Typography
         tag="h1"
         className={cn(
-          "font-oleo mb-4 text-2xl font-bold md:mb-6 md:text-xl lg:mb-16 lg:text-3xl",
+          "mb-4 font-oleo text-2xl font-bold md:mb-6 md:text-xl lg:mb-16 lg:text-3xl",
         )}
       >
         PawPrints

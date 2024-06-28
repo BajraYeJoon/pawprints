@@ -35,7 +35,7 @@ export const navItems = [
 
 export const donationSummaries = [
   {
-    goal: 100,
+    goal: 200,
     raised: 50,
     title: "New chance for animals",
     subtitle: "Give new chance for animals to live a better life",
@@ -104,5 +104,31 @@ export const subFooterLinks = [
   {
     name: "Sitemap",
     url: "#",
+  },
+];
+
+export const eventScheduleDates = [
+  {
+    date: "08",
+    month: "June",
+    eventName: "Disaster Relief for Animals",
+    time: "07:00 AM - 10:00 PM",
+    location: "Kathmandu",
+  },
+  {
+    date: "08 ",
+    month: "June",
+
+    eventName: "Rapid Response for Animals",
+    time: "07:00 AM - 10:00 PM",
+    location: "Kathmandu",
+  },
+  {
+    date: "08 ",
+    month: "June",
+
+    eventName: "Disaster Relief for Animals",
+    time: "07:00 AM - 10:00 PM",
+    location: "Kathmandu",
   },
 ];

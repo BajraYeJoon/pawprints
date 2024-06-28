@@ -5,14 +5,14 @@ import { cn } from "@/lib/utils";
 import { MoveRightIcon } from "lucide-react";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm md:text-lg tracking-wide font-workSans font-medium leading-7 cursor-pointer disabled:opacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm md:text-lg lg:text-base tracking-wide font-workSans font-medium leading-7 cursor-pointer disabled:opacity-50",
   {
     variants: {
       variant: {
         default: "bg-primary text-white hover:opacity-[0.95]",
 
         secondary:
-          "bg-white border border-primary text-primary hover:bg-primary hover:text-white",
+          "bg-white border border-primary text-primary hover:bg-primary hover:text-white hover:border-background",
         link: "text-primary hover:text-primary/80",
       },
       size: {
