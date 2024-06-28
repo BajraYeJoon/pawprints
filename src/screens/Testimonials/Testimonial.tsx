@@ -34,20 +34,21 @@ const CustomersTestimonial = () => {
       {testimonials.length > 0 && (
         <article className="flex flex-col items-center justify-between gap-5 md:flex-row md:gap-24 lg:gap-32">
           <div className="relative h-52 w-52 overflow-hidden rounded-t-full md:h-[380px] md:min-w-[300px] lg:h-[560px] lg:w-[452px]">
-            {isLoading && (
+            {isLoading ? (
               <div className="absolute inset-0 flex items-center justify-center">
                 <LoaderCircleIcon size={50} className="animate-spin" />
               </div>
+            ) : (
+              <Image
+                key={testimonials[currentIndex].imagePath}
+                src={testimonials[currentIndex].imagePath}
+                alt="Testimonial"
+                width={720}
+                height={1080}
+                className="h-full w-full object-contain md:object-cover"
+                onLoadingComplete={() => setIsLoading(false)}
+              />
             )}
-            <Image
-              key={testimonials[currentIndex].imagePath}
-              src={testimonials[currentIndex].imagePath}
-              alt="Testimonial"
-              width={720}
-              height={1080}
-              className="h-full w-full object-contain md:object-cover"
-              onLoadingComplete={() => setIsLoading(false)}
-            />
           </div>
 
           <figure className="flex max-w-screen-md flex-col items-center justify-center gap-4 text-sm md:items-start md:gap-10 md:text-base lg:text-xl">

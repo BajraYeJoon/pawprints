@@ -9,7 +9,7 @@ const renderNavItems = () =>
   navItems.map((item, index) => (
     <li key={index} className="lg:mr-12">
       <Link
-        className="text-md flex items-center text-gray-700 transition-all ease-in-out hover:text-background"
+        className="flex items-center text-sm text-gray-700 transition-all ease-in-out hover:text-background"
         href={item.link}
       >
         {item.name}
@@ -20,11 +20,11 @@ const renderNavItems = () =>
 
 const Navbar = () => {
   return (
-    <header className="fixed inset-x-0 top-10 z-[5000] mx-auto flex w-[90%] flex-col items-start justify-start rounded-2xl border border-gray-400 bg-white px-4 py-3 pl-8 md:w-[78%] lg:flex-row lg:items-center">
+    <header className="fixed inset-x-0 top-10 z-[5000] mx-auto flex w-[90%] flex-col items-start justify-start rounded-2xl border border-gray-400 bg-white px-4 py-3 pl-8 md:w-[78%] lg:max-w-screen-xl lg:flex-row lg:items-center xl:max-w-screen-2xl">
       <Link
         href="/"
         className={cn(
-          "flex items-center whitespace-nowrap border-gray-200 font-oleo text-2xl text-primary lg:border-r-2 lg:pr-4",
+          "flex items-center whitespace-nowrap border-gray-200 font-oleo text-xl text-primary lg:border-r-2 lg:pr-4",
         )}
       >
         Paw Prints
@@ -43,7 +43,7 @@ const Navbar = () => {
         aria-label="Header Navigation"
         className="flex max-h-0 w-full flex-col items-center overflow-hidden text-nowrap transition-all peer-checked:max-h-fit peer-checked:pt-8 lg:ml-24 lg:max-h-full lg:flex-row xl:ml-0"
       >
-        <ul className="flex w-full flex-col items-center justify-center space-y-2 lg:flex-row lg:justify-start lg:space-y-0 lg:pl-8">
+        <ul className="flex w-full flex-col items-center justify-center space-y-2 lg:flex-row lg:justify-start lg:space-y-0 lg:pl-3">
           {renderNavItems()}
         </ul>
 

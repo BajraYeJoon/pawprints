@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { MoveRightIcon } from "lucide-react";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm md:text-lg lg:text-base tracking-wide font-workSans font-medium leading-7 cursor-pointer disabled:opacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm  tracking-wide font-workSans font-medium leading-7 cursor-pointer disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -16,7 +16,7 @@ const buttonVariants = cva(
         link: "text-primary hover:text-primary/80",
       },
       size: {
-        default: "w-full md:w-fit py-2 md:px-12 md:py-4",
+        default: "w-full md:w-fit py-2 md:px-8 md:py-3",
         reset: "p-0",
       },
     },
