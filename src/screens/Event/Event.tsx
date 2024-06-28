@@ -4,7 +4,7 @@ import { eventScheduleDates } from "@/constants";
 
 const Event = () => {
   return (
-    <section className="my-20 flex flex-col items-center justify-center gap-12 bg-accent px-10 md:my-28 md:gap-16 md:px-24 md:py-28 lg:my-32 lg:px-52 xl:px-56">
+    <section className="my-20 flex flex-col items-center justify-center gap-12 bg-accent px-10 py-12 md:my-28 md:gap-16 md:px-24 md:py-28 lg:my-32 lg:px-52">
       <Heading
         title="Calender
         "
@@ -15,10 +15,10 @@ const Event = () => {
         {eventScheduleDates.map((event, index) => (
           <div
             key={index}
-            className="grid h-fit grid-cols-1 place-content-evenly gap-5 rounded-sm bg-[#FBEFE9] p-5 md:h-72 lg:min-w-[400px]"
+            className="grid h-fit grid-cols-1 place-content-evenly gap-5 rounded-sm bg-[#FBEFE9] p-5 md:h-72"
           >
             <div className="flex flex-row items-center justify-between md:flex-col md:items-start md:justify-start">
-              <Typography tag="span" className="text-4xl font-normal">
+              <Typography tag="span" className="text-3xl font-normal">
                 {" "}
                 {event.date}
               </Typography>
@@ -29,7 +29,7 @@ const Event = () => {
             </div>
             <Typography
               tag="h1"
-              className="text-base font-medium tracking-normal md:text-2xl"
+              className="text-base font-medium tracking-normal md:text-lg"
             >
               {event.eventName}
             </Typography>

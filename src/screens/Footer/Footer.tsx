@@ -10,13 +10,13 @@ import { footerLinks, subFooterLinks } from "@/constants";
 const Footer = () => {
   return (
     <footer
-      className="mx-auto max-w-80 pb-8 sm:max-w-2xl lg:mt-24 lg:max-w-7xl xl:max-w-screen-xl xl:px-8"
+      className="mx-auto max-w-80 pb-8 sm:max-w-2xl md:mt-24 lg:max-w-6xl lg:px-6 xl:max-w-screen-xl xl:px-0"
       aria-labelledby="footer-heading"
     >
       <Typography
         tag="h1"
         className={cn(
-          "mb-4 font-oleo text-2xl font-bold md:mb-6 md:text-xl lg:mb-16 lg:text-3xl",
+          "mb-4 font-oleo text-2xl font-bold md:mb-6 md:text-xl lg:mb-16 lg:text-2xl",
         )}
       >
         PawPrints
@@ -27,7 +27,7 @@ const Footer = () => {
             <div key={index} className="md:gap-8">
               <Typography
                 tag="h3"
-                className="text-sm font-medium uppercase leading-6 md:text-base md:font-normal lg:text-lg"
+                className="text-xs font-medium uppercase leading-6 md:text-sm md:font-normal lg:text-base"
               >
                 {section.title}
               </Typography>
@@ -36,7 +36,7 @@ const Footer = () => {
                   <li key={linkIndex}>
                     <Link
                       href={link.url}
-                      className="text-sm text-gray-500 hover:text-gray-900 md:text-base"
+                      className="text-xs text-gray-500 hover:text-gray-900 md:text-sm"
                     >
                       {link.name}
                     </Link>
@@ -49,25 +49,25 @@ const Footer = () => {
         <div className="space-y-4 md:space-y-8">
           <Typography
             tag="h3"
-            className="text-sm font-medium uppercase md:text-base md:font-normal lg:text-lg"
+            className="text-sm font-medium uppercase md:text-base md:font-normal"
           >
             Social Media
           </Typography>
           <Typography
             tag="p"
-            className="text-sm tracking-wider text-gray-800 md:text-base lg:text-lg"
+            className="text-xs tracking-wider text-gray-800 md:text-sm"
           >
             Follow us on social media to find out the latest updates on our
             progress.
           </Typography>
           <div className="flex space-x-6">
-            <FaXTwitter size={24} />
-            <FaFacebookF size={24} />
-            <AiFillInstagram size={24} />
+            <FaXTwitter size={20} />
+            <FaFacebookF size={20} />
+            <AiFillInstagram size={20} />
           </div>
         </div>
       </div>
-      <div className="mt-16 flex flex-col justify-between gap-4 border-t border-gray-900/50 pt-8 text-sm font-medium tracking-wide text-gray-700 sm:mt-20 md:text-base lg:mt-24 lg:flex-row">
+      <div className="mt-16 flex flex-col justify-between gap-4 border-t border-gray-900/50 pt-8 text-xs font-medium tracking-wide text-gray-700 sm:mt-20 md:text-sm lg:mt-24 lg:flex-row">
         <Typography tag="p" className="">
           Copyright &copy; {new Date().getUTCFullYear()} fourpaws. All Rights
           Reserved

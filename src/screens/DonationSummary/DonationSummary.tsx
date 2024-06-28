@@ -13,7 +13,7 @@ const DonationSummary = () => {
         subtitle="We advocate for vulnerable animals, providing safety while promoting responsible pet ownership. We uplift both animals and communities."
       />
 
-      <div className="grid h-fit grid-cols-1 place-content-center gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 place-content-center gap-8 md:grid-cols-2 lg:grid-cols-3">
         {donationSummaries.map((summary, index) => {
           const percentageRaised = (summary.raised / summary.goal) * 100;
 
@@ -23,35 +23,33 @@ const DonationSummary = () => {
               className="max-w-sm rounded-lg border border-gray-200 bg-white"
             >
               <Image
-                className="h-36 rounded-t-lg object-cover lg:h-72"
+                className="h-36 rounded-t-lg object-cover lg:h-48"
                 src={summary.img}
                 alt=""
               />
-              <div className="grid grid-cols-2 bg-accent p-5 text-sm font-medium uppercase tracking-wide">
+              <div className="grid grid-cols-2 gap-1 bg-accent p-5 text-sm font-medium uppercase tracking-wide md:gap-2 lg:gap-3">
                 <Typography tag="span">Goal: ${summary.goal}</Typography>
                 <Typography tag="span" className="text-right">
                   Raised: ${summary.raised}
                 </Typography>
                 <div className="col-span-2">
-                  <RangeSlider
-                    value={percentageRaised} // Use the calculated
-                  />
+                  <RangeSlider value={percentageRaised} />
                 </div>
               </div>
               <figure className="flex min-h-28 flex-col items-start justify-between gap-3 p-5">
                 <Typography
                   tag="h2"
-                  className="text-lg font-semibold tracking-normal md:text-2xl"
+                  className="text-lg font-medium tracking-normal md:text-xl"
                 >
                   {summary.title}
                 </Typography>
-                <figcaption className="text-sm text-gray-400 first-letter:font-normal md:text-base">
+                <figcaption className="text-xs font-normal text-gray-400 md:text-sm">
                   {summary.subtitle}
                 </figcaption>
                 <Button
                   variant="link"
                   size="reset"
-                  className="text-sm uppercase tracking-wider"
+                  className="text-xs uppercase tracking-wider"
                 >
                   View Details
                 </Button>
@@ -60,6 +58,8 @@ const DonationSummary = () => {
           );
         })}
       </div>
+
+      <Button>View All Cause</Button>
     </section>
   );
 };

@@ -18,14 +18,14 @@ const Heading = ({
   return (
     <section
       className={cn(
-        "flex flex-col justify-center gap-4 md:gap-3 lg:gap-8",
+        "flex flex-col justify-center gap-4 md:gap-3 lg:gap-5",
         placeContentLeft ? "items-start" : "items-center",
       )}
     >
       <Typography
         tag="span"
         className={cn(
-          "font-workSans text-xs font-medium uppercase tracking-wide text-primary md:text-base",
+          "font-workSans text-xs font-medium uppercase tracking-wide text-primary md:text-sm",
           placeContentLeft ? "text-left" : "text-center",
         )}
       >
@@ -34,7 +34,7 @@ const Heading = ({
       <Typography
         tag="h1"
         className={cn(
-          "text-2xl font-semibold md:text-2xl lg:text-4xl",
+          "text-2xl font-semibold md:text-2xl lg:text-3xl",
           placeContentLeft ? "text-left" : "text-center",
         )}
       >
@@ -43,7 +43,7 @@ const Heading = ({
       <Typography
         tag="h2"
         className={cn(
-          "font-workSans max-w-md text-sm font-normal tracking-normal text-gray-400 md:max-w-3xl md:text-base lg:max-w-5xl lg:text-xl",
+          "max-w-md font-workSans text-sm font-normal tracking-normal text-gray-400 md:max-w-xl md:text-base lg:max-w-3xl lg:text-base",
           placeContentLeft ? "text-left" : "text-center",
         )}
       >

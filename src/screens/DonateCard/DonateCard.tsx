@@ -13,16 +13,16 @@ const DonateCard = () => {
   const goalCompletedPercent = (raisedDonateAmount / goalDonateAmount) * 100;
 
   return (
-    <section className="lg:my-30 mx-auto my-20 px-10 sm:px-6 md:my-28 md:px-24 lg:px-52">
+    <section className="mx-auto my-20 px-10 sm:px-6 md:mt-28 md:px-24 lg:px-40">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-4 md:gap-4 lg:gap-0">
         <div className="relative col-span-2 flex justify-center">
           <Image
-            className="flex rounded-md object-cover"
+            className="flex rounded-md object-cover lg:h-[540px] lg:w-[350px] xl:w-[400px]"
             src={donateCardImg}
             alt="Donate Dog"
           />
 
-          <div className="bottom-20 right-12 hidden rotate-90 rounded-md bg-background px-6 py-4 text-white lg:absolute lg:block">
+          <div className="bottom-20 right-8 hidden rotate-90 rounded-md bg-background px-6 py-4 text-white lg:absolute lg:block">
             Paw Prints
           </div>
         </div>
@@ -35,7 +35,7 @@ const DonateCard = () => {
             placeContentLeft
           />
 
-          <div className="mt-3 flex flex-col gap-6">
+          <div className="mt-6 flex flex-col gap-6 lg:mt-8">
             <RangeSlider value={goalCompletedPercent} />
             <div className="flex justify-between">
               <Typography tag="p">Goal: ${goalDonateAmount}</Typography>

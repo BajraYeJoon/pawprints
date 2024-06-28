@@ -3,16 +3,16 @@ import { Button, Typography } from "@/components";
 
 const NewsLetterCTASection = () => {
   return (
-    <section className="my-10 bg-foreground px-6 py-10 md:my-12 md:px-0 lg:my-12">
-      <div className="mx-auto flex flex-col justify-between gap-5 px-4 lg:flex-row lg:px-56">
+    <section className="my-10 bg-foreground px-6 py-10 md:my-0 md:px-0">
+      <div className="mx-auto flex flex-col justify-between gap-5 px-4 lg:flex-row lg:px-40 xl:max-w-screen-xl xl:px-0">
         <div className="flex flex-col items-center gap-1 md:gap-2 lg:items-start lg:gap-2">
           <Typography
             tag="h3"
-            className="text-sm font-semibold md:text-base lg:text-2xl"
+            className="text-xs font-semibold md:text-sm lg:text-lg"
           >
             Join our Newsletter{" "}
           </Typography>
-          <Typography tag="p" className="font-normal md:text-sm lg:text-base">
+          <Typography tag="p" className="text-xs font-normal lg:text-sm">
             Pawprint that has been for pets.
           </Typography>
         </div>
@@ -21,12 +21,14 @@ const NewsLetterCTASection = () => {
           <input
             type="email"
             name="email"
-            className="h-10 w-full rounded-md px-5 py-1 text-sm shadow-sm placeholder:text-gray-400 focus:outline-none md:h-14 md:max-w-md md:text-base lg:text-lg"
+            className="h-10 w-full rounded-md px-5 py-1 text-xs shadow-sm placeholder:text-gray-400 focus:outline-none md:h-10 md:max-w-md md:text-sm"
             placeholder="Enter your email"
             required
           />
 
-          <Button hideIcon>Subscribe</Button>
+          <Button hideIcon className="md:h-10">
+            Subscribe
+          </Button>
         </form>
       </div>
     </section>

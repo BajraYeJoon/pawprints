@@ -43,7 +43,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       >
         {children}
-        {!hideIcon && <MoveRightIcon size={30} className="ml-2" />}
+        {!hideIcon && <MoveRightIcon size={20} className="ml-2" />}
       </Comp>
     );
   },
